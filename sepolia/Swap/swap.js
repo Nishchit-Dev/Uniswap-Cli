@@ -1,4 +1,6 @@
-const { getPoolImmutables, getPoolState } = require("../../heplers");
+const { getPoolImmutables } = require("./pool/getPoolImmutables");
+const { getPoolState } = require("./pool/getPoolState");
+
 const { checkBalance } = require("./balance/checkBalanace");
 const { tokens } = require("./constant/tokens/tokens");
 const { getPoolAddress } = require("./factory/factory");
@@ -26,7 +28,7 @@ const Swap = async () => {
   const WalletAddress = getWalletAddress();
   console.log("wallet Address -> ", WalletAddress);
 
-  let amount = 10;
+  let amount = 100;
 
   await WrapTokens(
     wallectConnted,
