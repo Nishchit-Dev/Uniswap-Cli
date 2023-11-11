@@ -12,7 +12,7 @@ exports.getPoolAddress = async (provider) => {
   );
   const poolAddress = await factoryContract.getPool(
     tokens().wrappedEtherToken.address,
-    tokens().USDTToken.address,
+    tokens().WBTCToken.address,
     10000
   );
 

@@ -9,6 +9,12 @@ const WrappedEther_Token = {
   symbol: "WrappedETH",
 };
 
+const WrappedBTC = {
+  address:"0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+  decimals:8,
+  symbol:"WBTC"
+}
+
 const USDT_Token = {
   address:"0xdAC17F958D2ee523a2206206994597C13D831ec7",
   decimals:6,
@@ -19,6 +25,7 @@ exports.tokens = () => {
   return {
     uniswapToken: Uni_Token,
     wrappedEtherToken: WrappedEther_Token,
-    USDTToken:USDT_Token
+    USDTToken:USDT_Token,
+    WBTCToken:WrappedBTC
   };
 };

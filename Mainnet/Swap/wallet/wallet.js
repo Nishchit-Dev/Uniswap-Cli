@@ -7,8 +7,8 @@ const walletCred = {
 }
 
 const forkedNetWallet = {
-  walletPrivateKey:"0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
-  walletAddress:"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+  walletPrivateKey:"0x294da78f56ac598b6b84e493cb5ce60a9057afc14ed5a438e206a9e77f00fe45",
+  walletAddress:"0xb743581b9325D07e37Dca72B08A04E1755b2ff56"
 }
 
 exports.getWallet = async (provider) => {

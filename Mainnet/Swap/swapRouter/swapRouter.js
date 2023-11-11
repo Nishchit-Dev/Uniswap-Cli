@@ -15,8 +15,8 @@ const SwapTx = async (
   sqrtPriceX96
 ) => {
   let tx = {
-    tokenIn: await immutables.token0(),
-    tokenOut: await immutables.token1(),
+    tokenIn: await immutables.token1(),
+    tokenOut: await immutables.token0(),
     fee: await immutables.fee(),
     recipient: address,
     deadline: Math.floor(Date.now() / 1000 + 60 * 10),
